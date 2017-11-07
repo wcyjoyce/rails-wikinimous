@@ -1,0 +1,12 @@
+<div class="form">
+  <h2>Add an Article</h2>
+  <%= render "form", article: @article %>
+</div>
+
+<hr>
+
+<div class="link">
+  <%= link_to articles_path do %>
+  <i class="fa fa-undo" aria-hidden="true"></i> Back to list
+  <% end %>
+</div>

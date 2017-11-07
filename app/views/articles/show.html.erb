@@ -1,0 +1,20 @@
+<div class="show">
+  <h2><%= @article.title %></h2>
+  <p><%= @article.content %></p>
+
+  <br>
+
+  <div class="link">
+    <%= link_to articles_edit_path, class: "btn btn-default btn-sm" do %>
+      <i class="fa fa-pencil" aria-hidden="true"></i> Edit this Article
+    <% end %>
+  </div>
+
+  <hr>
+
+  <div class="link">
+    <%= link_to articles_path do %>
+    <i class="fa fa-undo" aria-hidden="true"></i> Back to List
+    <% end %>
+  </div>
+</div>
