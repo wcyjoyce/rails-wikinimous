@@ -15,4 +15,6 @@ Rails.application.routes.draw do
 
   # Delete an article
   delete "articles/:id", to: "articles#destroy"
+
+  root to: "articles#index"
 end
